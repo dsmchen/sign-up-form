@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Gudea';
-  src: url('Gudea-Bold.woff2') format('woff2'),
-    url('Gudea-Bold.woff') format('woff');
+  src: url('assets/Gudea-Bold.woff2') format('woff2'),
+    url('assets/Gudea-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,8 @@
 
 @font-face {
   font-family: 'Gudea';
-  src: url('Gudea.woff2') format('woff2'), url('Gudea.woff') format('woff');
+  src: url('assets/Gudea.woff2') format('woff2'),
+    url('assets/Gudea.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -113,6 +114,58 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  margin-bottom: 60px;
+}
+
+form h1 {
+  grid-column: span 2;
+
+  margin-bottom: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+form input:focus {
+  border-color: blue;
+  box-shadow: 0px 5px 5px #d4d4d4;
+}
+
+form input:invalid {
+  border-color: red;
+}
+
+form button {
+  grid-column: span 2;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  background-color: #a78347;
+}
+
+.form-container .log-in {
+  font-weight: bold;
 }
 
 /* Testimonial */
